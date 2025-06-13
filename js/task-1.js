@@ -1,8 +1,9 @@
-const userName = "John";
-const userLastName = "Doe";
-const fullName = `${userName} ${userLastName}`
-// let userInput = prompt('Input your age:')
-// const age = Number(userInput);
+function makeTransaction(quantity, pricePerDroid) {
+    const totalPrice = quantity * pricePerDroid;
+    const message = `You ordered ${quantity} droids worth ${totalPrice} credits!`;
+    return message;
+}
 
-// console.log(fullName);
-// console.log(userInput);
+console.log(makeTransaction(5, 3000)); // "You ordered 5 droids worth 15000 credits!"
+console.log(makeTransaction(3, 1000)); // "You ordered 3 droids worth 3000 credits!"
+console.log(makeTransaction(10, 500)); // "You ordered 10 droids worth 5000 credits!"
